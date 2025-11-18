@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.div_flex {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(3, 56, 3);
+    height: 615px;
+}
+
+.flex_left {
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_flex .flex_left h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    margin-top: 70px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.div_flex .flex_left h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.7);
+
+}
+
+.div_flex .flex_left button {
+    padding: 20px 40px;
+    font-size: 15px;
+    font-weight: 800;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    transition: all 0.5s;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.div_flex .flex_left button:hover {
+    background-color: #5f95be;
+    color: #fff;
+}
+
+.flex_right {
+    padding: 10px;
+    flex: 50%;
+    background-image: url(../Image/Home/women1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+}
+
+#freel {
+    font-style: italic;
+}
+
+
+
+#text1 {
+    color: white;
+    font-weight: 900;
+}
+
+#text2 {
+    margin-top: 50px;
+    color: rgb(2, 2, 2);
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.jobctg_div {
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.job1 {
+    border: 3px solid #ddd;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+}
+
+.job1 img {
+    width: 100%;
+    height: 200px;
+}
+
+.job1 a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: auto;
+    text-align: center;
+    color: rgb(8, 167, 27);
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.job_row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+
+.job_img {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
+.job1:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+.imagebar {
+    padding: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../Image/Home/bar.png);
+    background-size: cover;
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 8);
+
+}
+
+.foruser_div {
+    width: 90%;
+    margin: 80px auto;
+    height: 550px;
+    background-color: #45a049;
+    background-image: url(../Image/Home/women2.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+
+    background-size: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    border-radius: 20px;
+}
+
+#ftyw_text {
+    font-size: 80px;
+    padding: 10px;
+    margin-left: 30px;
+    color: white;
+    font-weight: 900;
+    margin-bottom: 0;
+}
+
+#ftyw_text2 {
+    font-size: 25px;
+    color: rgb(218, 213, 213);
+    font-weight: 900;
+    width: 400px;
+    margin: 20px 50px;
+
+}
+
+.div3 a,
+.foruser_div a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: auto;
+    margin-left: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    background-color: #45a049;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.div3 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    height: 550px;
+    width: 90%;
+    background-color: #4e504e;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    border-radius: 20px;
+
+}
+
+.left_div3 {
+    flex: 50%;
+    background-image: url(../Image/FT/jobv.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.right_div3 {
+    flex: 50%;
+
+}
+@media (max-width: 1200px) {
+   
+    .job_row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .left_div3 {
+        flex: 60%;
+       
+    }
+    
+    .right_div3 {
+        flex: 40%;
+    
+    }
+}
+
+@media (max-width: 1100px) {
+    .div_flex .flex_left h2 {
+        font-size: 48px;
+        margin-top: 50px;
+    
+    }
+    .div_flex .flex_left h3 {
+        font-weight: 600;
+        font-size: 30px;
+       
+    
+    }
+    
+    .div_flex .flex_left button {
+        margin-top: 0px;
+    
+    }
+   
+    .flex_right {
+
+        background-position: center;
+        background-size: cover ;
+    }
+ 
+}
+
+
+
+@media (max-width: 890px) {
+    .div_flex .flex_left h2 {
+        font-size: 35px;
+
+    
+    }
+    .div_flex .flex_left h3 {
+       
+        font-size: 20px;
+       
+    
+    }
+    .job_row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #ftyw_text2 {
+        font-size: 20px;
+        margin: 20px 50px;
+    
+    }
+    #ftyw_text {
+        font-size: 50px;
+    }
+    
+  
+}
